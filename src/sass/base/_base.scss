@@ -1,3 +1,8 @@
+body {
+    font-family: DM Sans;
+    @include fonts(500, 14px, 1.5, null);
+}
+
 p,
 h1,
 h2,
@@ -5,23 +10,28 @@ h3,
 h4,
 h5,
 h6,
-ul {
-    margin: 0px;
+ul,
+input {
+    margin: 0;
+    padding: 0;
 }
 
-.link {
+a {
     text-decoration: none;
 }
 
-.list {
-    padding: 0px;
-    margin: 0px;
+ul {
     list-style: none;
 }
 
 img {
     display: block;
     max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
 }
 
 .visually-hidden {
@@ -36,3 +46,8 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+// .container {
+//     margin: 0 auto;
+//     padding: 0 20px;
+// }
